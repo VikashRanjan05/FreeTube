@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.imgcont {
+  background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  height: 100vh;
+    
+}
+.formcont{
+  background-color: #C82333;
+  display: flex;
+  justify-content: center;
+
+}
+.logo{
+    color: white;
+}
+.tour{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -120px;
+    border-bottom:2px solid white;
+    border-width:60%;
+}
+
+.formbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+ .formbox h4 {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.formbox .form-input {
+  position: relative;
+}
+.formbox .form-input input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: white;
+  padding-left: 45px;
+}
+.formbox .form-input span {
+  position: absolute;
+  top: 8px;
+  padding-left: 20px;
+  color: #777;
+}
+.formbox .form-input input::placeholder {
+  padding-left: 0px;
+}
+.formbox .form-input input:focus,
+.formbox .form-input input:valid {
+  border-bottom: 2px solid #dc3545;
+}
+.check {
+  margin-left: 15px;
+}
+.forgot {
+  float: right;
+  margin-top: -40px;
+  
+}
+.forget,.register,.login{
+    color: #fff;
+    font-weight: bold;
+}
+.last{
+    margin-top: 30px;
+}
+.forget:hover , .register:hover,.login:hover{
+    color: #000;
+    text-decoration: none;
+}
+.formbox input[type='checkbox']:not(:checked) + label:before {
+  background: transparent;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+}
+.formbox
+  .custom-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  background-color: #dc3545;
+  border: 0px;
+}
+.formbox button[type='submit'] {
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.formbox button[type='submit']:hover{
+    -webkit-box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.55);
+    -moz-box-shadow:0px 9px 10px -2px rgba(0,0,0,0.55);
+    box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.55);
+}
+.log{
+    margin-top: -10px;
+}
+.logo-link{
+    color: #fff;
+}
+.logo-link:hover{
+    text-decoration: none;
+    color: #fff;
+}

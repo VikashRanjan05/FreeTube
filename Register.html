@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg -6 col-md-6 formcont">
+          <div
+            class="col-lg-8 col-md-12 col-sm-9 col-xs-12 formbox text-center"
+          >
+            <div class="logo mt-5 mb-3 ">
+              <a href="index.html" class="logo-link">
+                <h3 class="tour">FreeTube</h3></a
+              >
+            </div>
+            <div class="heading">
+              <h4>Create Your Account</h4>
+            </div>
+            <form class="fom" id="form1">
+              <div class="form-input">
+                <span><i class="fa fa-user"></i></span>
+                <input type="text" placeholder="Full Name" required />
+              </div>
+              <div class="form-input">
+                <span><i class="fa fa-envelope"></i></span>
+                <input type="email" placeholder="Email Address" required />
+              </div>
+              <div class="form-input">
+                <span><i class="fa fa-lock"></i></span>
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="row mb-3">
+                <div class="custom-control custom-checkbox check">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="cb1"
+                    checked
+                  />
+                  <label class="custom-control-label text-white" for="cb1"
+                    >I agree all terms & conditions</label
+                  >
+                </div>
+              </div>
+
+              <div class="text-left">
+                <button type="submit" class="btn" id="submit">Register</button>
+              </div>
+
+              <div class="text-white last">
+                Already have an account?
+                <a href="login.html" class="login">Login here</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 d-none d-md-block imgcont"></div>
+      </div>
+    </div>
+    <script>
+      document.getElementById('form1').onsubmit = () => {
+        alert('you have registerd now on this site');
+        window.location.replace('index.html');
+        return false;
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,274 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  border: 2px solid rgb(36, 34, 34);
+  
+  background:rgb(36, 34, 34);
+}
+::-webkit-scrollbar-thumb{
+  background-color: #C82333;
+  border-radius: 6px;
+}
+/* LOADER */
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.letter{
+  position: relative;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  animation: loading 3s linear infinite;
+}
+@keyframes loading{
+  0%{
+      filter: blur(0);
+  }
+  40%{
+      filter: blur(20px);
+  }  
+  80%{
+      filter: blur(0);
+  }
+  100%{
+      filter: blur(0);
+  }
+}
+loading span:nth-child(1){
+  animation-delay: 0s;
+}
+loading span:nth-child(2){
+  animation-delay: 0.1s;
+}
+loading span:nth-child(3){
+  animation-delay: 0.2s;
+}
+loading span:nth-child(4){
+  animation-delay: 0.3s;
+}
+loading span:nth-child(5){
+  animation-delay: 0.4s;
+}
+loading span:nth-child(6){
+  animation-delay: 0.5s;
+}
+loading span:nth-child(7){
+  animation-delay: 0.6s;
+}
+/* loader ends here */
+#nav{
+  background:#242424;
+}
+
+#particle{
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+li  a:hover {
+  color: #37ac5e !important;
+}
+
+li {
+  padding: 0em 2em;
+}
+#Brand {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  color: white;
+}
+#brandlogo{
+  animation: none;
+}
+
+#bttn{
+  margin-top: -4px;
+}
+.text{
+  font-size: 3.1em;
+  font-weight: 600;
+  transition: 1s;
+  font-family: 'Times New Roman', Times, serif;
+}
+p{
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+button{
+  margin-top: 30px;
+}
+.text1{
+  color: #37ac5e;
+}
+#content{
+  text-align: left;
+  color:white;
+  padding: 160px 0px;
+}
+
+#slider{
+  position: absolute;
+  top: 50px;
+  left: -220px;
+  width: 220px;
+  height: 100vh;
+  background: #343A40;
+  z-index: 99;
+  transition: 0.5s;
+  background-color: #242424;
+}
+#slider.active{
+  left: 0px;
+  position: fixed;
+  transition: 1s;
+}
+#navlist{
+  margin: 20px 20px;
+  align-items: center;
+}
+
+#first{
+  background: url("https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.firstpara , .secondContent2{
+  animation-delay: 0.4s;
+  
+}
+#firstbtn{
+  color: #37ac5e;
+  border: 2px solid ;
+  background: transparent; 
+}
+#firstbtn:hover{
+  color: white;
+  background: #37ac5e;
+  border: 2px solid #37ac5e;
+}
+#second{
+}
+.secondImage{
+  height: 100%;
+  width: 80%;
+  
+}
+
+.secondContent1 , .secondContent2{
+  
+  color: #37ac5e;
+ 
+ 
+}
+
+.secondContent2{
+  padding-top: 60px;
+  
+}
+.text-2{
+  color: #C82333;
+}
+.list{
+  list-style: none;
+  display: block;
+  float: left;
+}
+.list-item{
+  padding: 5px;
+  font-size: 1.3em;
+  font-weight: 800;
+  color: #343A40;
+  font-family: 'Courier New', Courier, monospace;
+}
+#secondlist{
+  float: left;
+  margin-top: 20px;
+}
+#third{
+
+}
+.thirdContent{
+  padding: 10px 0px 50px;
+  
+  text-align: center;
+}
+.thirdContent-text{
+  text-shadow: 1px 1px #242424;
+}
+#fourth{
+  background-attachment: fixed;
+  background-image: url("https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+#cardimg1{
+  width: 270px;
+  height: 250px;
+  margin: auto;
+  padding: 10px;
+  border-radius:200px ;
+}
+
+#cardimg2 , #cardimg3  {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding: 10px;
+}
+#card{
+  margin: 5%   2.5% 0 2.5%;
+  background: transparent;
+  border: 2px solid #242424;
+  border-radius: 50px;
+}
+.cardbody{
+  text-align: center;
+}
+.cardtitle{
+  font-family:'Times New Roman', Times, serif ;
+  font-size: 24px;
+  font-weight: 600;
+  color: #37ac5e;
+  text-shadow: 1px 1px #131f17;
+}
+.cardtext{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: #C82333;
+  text-shadow: 1px 1px #131f17;
+}
+.map{
+  height: 400px ;
+  width: 50vw;
+  margin-left:200px ;
+}
+
+
+
+#footer{
+  height: 80px;
+  background-color: #000;
+  color: white;
+}
+.footer_text{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}

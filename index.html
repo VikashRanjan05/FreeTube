@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FreeTube</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- loader
+  <div class="loading" id="loading">
+    <span class="letter">L</span>
+    <span class="letter">O</span>
+    <span class="letter">A</span>
+    <span class="letter">D</span>
+    <span class="letter">I</span>
+    <span class="letter">N</span>
+    <span class="letter">G</span>
+    
+  </div> -->
+    <!-- bg-dark navbar-dark  -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="nav">
+      <!-- Brand -->
+
+      <a class="navbar-brand" id="Brand" href="#">
+        <span class="brandlogo" id="brandlogo">
+          <i class="fas fa-laptop-code"></i>
+        </span>
+        FreeTube
+      </a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        onclick="showslider()"
+        id="bttn"
+      >
+        <span class="navbar-toggler-icon" id="navtoggler"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class=" navbar-collapse justify-content-end d-none">
+        <ul class="navbar-nav" id="navList">
+          <li class="nav-item ">
+            <a class="nav-link text-white" id="one" href="#third">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="login.html">login</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="Register.html">register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- side Nav-Bar -->
+    <div class="navbar" id="slider">
+      <ul class="navbar-nav">
+        <li class="nav-item " id="navlist">
+          <a class="nav-link text-white" id="one" href="#third">About</a>
+        </li>
+        <li class="nav-item" id="navlist">
+          <a class="nav-link text-white" href="login.html">login</a>
+        </li>
+        <li class="nav-item " id="navlist">
+          <a class="nav-link text-white" href="Register.html">register</a>
+        </li>
+      </ul>
+    </div>
+    <!-- First Container -->
+    <div id="particle"></div>
+    <div class="" id="first">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 ">
+            <div class="container " id="content">
+              <h1 class="text animated bounceInLeft slow">
+                Welcome to the world of
+                <span class="text1">Information Technology</span>
+              </h1>
+              <p class="animated bounceInLeft slow firstpara">
+                Here you can start your journey to become an Information
+                Technology Professional. . . .
+              </p>
+              <button class="btn rounded animated bounceInRight slow" id="firstbtn" onclick="start_btn()">Get Started!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Container -->
+    <div class="container d-flex" id="second">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="secondContent1  justify-content-center d-flex " id="secondContent1" >
+            <img class="secondImage" src="Images/laptop.png"  id="secondImage"/>
+          </div>
+        </div>
+        <div class="col-md-6" >
+          <div class="secondContent2">
+            <h3 class="text">
+              Fields associated to
+              <span class="text-2"> Information Technology</span>
+            </h3>
+            <div class="col-md-6" id="secondlist">
+              <ul class="list">
+                <li class="list-item">Machine Learning</li>
+                <li class="list-item">Data Science</li>
+                <li class="list-item">Cyber Security</li>
+              </ul>
+            </div>
+            <div class="col-md-6" id="secondlist">
+              <ul class="list">
+                <li class="list-item">Data Analyst</li>
+                <li class="list-item">Web Developer</li>
+                <li class="list-item">Andriod Developer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center" id="third">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="thirdContent">
+            <h2 class="thirdContent-text text">Here are some of our IT Professionals</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center" id="fourth">
+      <div class="row py-5">
+        <div class="col-md-4">
+              <div class="thirdinnercontent1 justify-content-center d-flex">
+                <div class="card card1" style="width: 300px;" id="card">
+                  <img class="card-img-top" src="./Images/aman.png" alt="avtar" id="cardimg1">
+                  <div class="card-body cardbody">
+                    <div class="card-title cardtitle">Aman Prateek Singh</div>
+                    <div class="card-text cardtext" >Technical Expert</div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 px-5">
+              <div class="thirdinnercontent1">
+                <div class="card card2" style="width: 300px;" id="card">
+                  <img class="card-img-top" src="./Images/login-avatar.png" alt="avtar" id="cardimg2">
+                  <div class="card-body cardbody">
+                    <div class="card-title cardtitle">Vikash Chauhan</div>
+                    <div class="card-text cardtext" > Web Developer</div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 px-5">
+              <div class="thirdinnercontent1">
+                <div class="card card3" style="width: 300px;" id="card">
+                  <img class="card-img-top" src="./Images/priyam.png" alt="avtar" id="cardimg3">
+                  <div class="card-body cardbody">
+                    <div class="card-title cardtitle">Priyam Prakash</div>
+                    <div class="card-text cardtext" >Marketing Expert</div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <di class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d639.4411407961014!2d85.3864865674224!3d26.092953842916888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed1147841360fd%3A0xb1ee6d7907b4df30!2sRamdyalunagar%20Bus%20Stop!5e0!3m2!1sen!2sin!4v1585757695200!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </di> -->
+    <div class="container-fluid d-flex justify-content-center align-items-center" id="footer">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="footer_text">Thank You For Visiting Here</h1>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js">
+      
+    </script>
+    <script src="./particles.js-master/particles.js-master/particles.js"></script>
+    <script src="./particles.js-master/particles.js-master/demo/js/app.js"></script>
+  </body>
+</html>

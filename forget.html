@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="styles/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg -6 col-md-6 formcont">
+          <div
+            class="col-lg-8 col-md-12 col-sm-9 col-xs-12 formbox text-center"
+          >
+            <div class="logo mt-5 mb-3 ">
+                <a href="index.html" class="logo-link"><h3 class="tour">FreeTube</h3></a>
+            </div>
+            <div class="reset-form d-block">
+                <form class="reset-password-form">
+                    <h4 class="mb-3">Reset Your Password</h4>
+                    <p class="mb-3 text-white">
+                        Please enter your email address and will send your password reset link
+                    </p>
+                    <div class="form-input">
+                        <span><i class="fa fa-envelope"></i></span>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="mb-3 text-left log">
+                        <button type="submit" class="btn">Send Reset link</button>
+                    </div>
+                </form>
+            </div>
+            <div class="reset-confirm d-none">
+                <h4 class="mb-3">Link is sent</h4>
+                <h6 class="text-white">Plaese,check your inbox for password reset link</h6>
+            
+            <div class="text-right mb-3 log2">
+                <a href="login.html">
+                    <button type="submit" class="btn">Login Now</button>
+                </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 d-none d-md-block imgcont"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        function PasswordReset(){
+            $('form.reset-password-form').on('submit',function(e){
+                e.preventDefault();
+                $('.reset-form')
+                .removeClass('d-block')
+                .addClass('d-none');
+                $('.reset-confirm').addClass('d-block');
+            });
+           
+        }
+        window.addEventListener('load',function(){
+                PasswordReset();
+            });
+    </script>
+  </body>
+</html>
